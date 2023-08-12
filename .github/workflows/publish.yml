@@ -102,7 +102,6 @@ jobs:
 
         steps:
             - uses: actions/checkout@v3
-
             - name: Download build
               uses: actions/download-artifact@v3
               with:
@@ -113,8 +112,7 @@ jobs:
               run: |
                   echo "- Root directory:" && ls
                   echo "- Dist directory:" && ls -R dist
-
-            - name: Publish to npm
-              uses: JS-DevTools/npm-publish@v1
+            - uses: JS-DevTools/npm-publish@v2
               with:
-                  token: ${{ secrets.NPM_TOKEN }}
+                token: ${{ secrets.NPM_TOKEN }}
+                access: public
