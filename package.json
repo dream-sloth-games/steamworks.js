@@ -1,5 +1,5 @@
 {
-    "name": "@dream-sloth-games/steamworks.js",
+    "name": "@dreamslothgames/steamworks.js",
     "version": "0.3.1",
     "main": "index.js",
     "types": "index.d.ts",
